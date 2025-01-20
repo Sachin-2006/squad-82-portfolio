@@ -10,6 +10,7 @@ const Navbar = () => {
     setMobile(!isMobile);
   };
 
+
   return (
     <nav className="navbar-container">
 
@@ -25,11 +26,12 @@ const Navbar = () => {
 
      
       <div className={`navbar-links ${isMobile ? 'active' : ''}`}>
-        <button onClick={() => navigate("/")}>Home</button>
-        <button onClick={() => navigate("/projects")}>Projects</button>
-        <button onClick={() => navigate("/activities")}>Activities</button>
-        <button onClick={() => navigate("/about")}>About Us</button>
-        <button onClick={() => navigate("/squad")}>Squad</button>
+      <button className="ui-btn" onClick={()=>{setMobile(!isMobile);navigate("/")}}> <span>Home</span></button>
+      <button className="ui-btn" onClick={()=>{setMobile(!isMobile);navigate("/activities")}}><span>Activities</span></button>
+      <button className="ui-btn" onClick={()=>{setMobile(!isMobile);navigate("/squad")}}><span>Squad</span></button>
+      <button className="ui-btn" onClick={()=>{setMobile(!isMobile);navigate("/projects")}}><span>Projects</span></button>
+      <button className="ui-btn" onClick={()=>{setMobile(!isMobile);navigate("/about")}}><span>About Us</span></button>
+
       </div>
     </nav>
   );

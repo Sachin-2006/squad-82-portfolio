@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Activities from './components/Activities';
 import Squad from './components/Squad';
 import Footer from './components/Footer';
-
+import NotFound from "./components/404"
 //Importing Tools
 import { Routes, Route } from 'react-router-dom';
 
@@ -17,14 +17,16 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className='content'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/Squad" element={<Squad />} />
-        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
+      </div>
       <Footer/>
     </>
   );

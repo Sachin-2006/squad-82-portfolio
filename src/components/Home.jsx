@@ -4,7 +4,24 @@ function Home(){
 
 return(
 <>
-Home
+<div className="home-content">
+
+<div class="card">
+  <div class="wrap">
+    <div class="terminal">
+
+
+      <div class="body">
+        <pre class="pre">          <code>-&nbsp;</code>
+          <code>Squad82@Kalvium$ </code>
+          <code class="cmd" data-cmd="We are Kalvians!"></code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 </>
 )
 }

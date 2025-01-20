@@ -1,4 +1,5 @@
 body{
     margin: 0%;
-    background: radial-gradient(circle at center,#6a5df0, hsl(245, 62%, 58%));
+    background: rgb(26, 23, 23);
+    color: white;
 }
